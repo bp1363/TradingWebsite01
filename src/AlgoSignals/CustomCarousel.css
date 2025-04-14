@@ -1,0 +1,74 @@
+.custom-carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: #0d0d0d;
+    color: #ffffff;
+  }
+  
+  .carousel-text {
+    text-align: center;
+    padding: 40px 40px 20px; /* Increased horizontal padding */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .carousel-text h2 {
+    font-size: 3rem; /* Bigger heading */
+    color: #00ff88;
+    margin-bottom: 12px;
+  }
+  
+  .carousel-text p {
+    font-size: 1.3rem;
+    color: #dddddd;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Increased height */
+    margin: 0 auto;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 30px; /* 20px from the left */
+    right: 30px; /* 20px from the right */
+    width: calc(100% - 60px); /* Total of 40px reduced from width */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 12px 36px rgba(0, 255, 136, 0.5);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  
+  .carousel-image.active {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .dot {
+    height: 14px;
+    width: 14px;
+    margin: 0 8px;
+    background-color: #555;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active-dot {
+    background-color: #00ff88;
+  }
+  
