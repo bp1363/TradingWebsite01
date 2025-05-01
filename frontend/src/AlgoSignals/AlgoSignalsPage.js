@@ -33,7 +33,7 @@ const AlgoSignalsPage = () => {
           <h1>Algo Signals V1 [Lifetime Access]</h1>
           <div className="stars">⭐️⭐️⭐️⭐️⭐️ <span className="reviews">(5.6k)</span></div>
           <h2 style={{ marginBottom: '10px', color: '#2e8b57' }}>
-          INR - {price}.00
+          $  {price}.00
           </h2>
           <button className="split-button" onClick={handleAddToCart}>
           Buy it now

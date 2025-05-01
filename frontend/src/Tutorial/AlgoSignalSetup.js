@@ -1,6 +1,6 @@
 import React from 'react';
 import './AlgoSignalSetup.css';
-import Footer from '../components/Footer';
+import Footer from "../components/Footer";
 
 // Importing images from assets folder
 import setup3 from '../assets/setup3.png';

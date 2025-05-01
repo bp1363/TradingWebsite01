@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CheckoutPage.css';
 import { useCart } from '../context/CartContext';
+import Footer from "../components/Footer";
 
 const countryList = [
   "India", "USA", "UK", "Germany", "Australia", "Canada", "France", "Japan", "Brazil", "Italy"
@@ -140,7 +141,7 @@ const CheckoutPage = () => {
                   <div className="product-details">
                     <h3>{item.title}</h3>
                     <div className="stars">⭐️⭐️⭐️⭐️⭐️ <span className="reviews">(1205)</span></div>
-                    <p className="unit-price">${item.price}</p>
+                    <p className="unit-price">$  {item.price}</p>
                     <p className="preset-label">Preset: Essential</p>
                   </div>
                 </div>
@@ -152,7 +153,7 @@ const CheckoutPage = () => {
                 </div>
 
                 <div className="total-col total-price">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  $  {(item.price * item.quantity).toFixed(2)}
                 </div>
 
                 <div className="remove-btn" title="Remove item" onClick={() => removeItem(item.id)}>🗑</div>
@@ -161,7 +162,7 @@ const CheckoutPage = () => {
 
             <div className="cart-subtotal">
               <span>Subtotal</span>
-              <span>${calculateSubtotal()}</span>
+              <span>$  {calculateSubtotal()}</span>
             </div>
 
             {!showForm ? (
@@ -219,10 +220,12 @@ const CheckoutPage = () => {
           </>
         )}
       </div>
+      <Footer />
 
-      <footer className="footer">
+
+      {/* <footer className="footer">
         <p>© 2025 Your Company. All rights reserved.</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };

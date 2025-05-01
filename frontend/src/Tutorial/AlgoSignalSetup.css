@@ -1,0 +1,159 @@
+/* Container */
+.setup-container {
+  background-color: #121c18; /* Dark background */
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Section */
+.setup-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.setup-header h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #00ff88;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 10px rgba(0, 255, 136, 0.5);
+}
+
+.setup-header p {
+  font-size: 16px;
+  color: #66ffbb;
+  margin-top: 10px;
+}
+
+/* Link Styling */
+.link {
+  color: #00ff88;
+  text-decoration: none;
+  border-bottom: 1px dashed #00ff88;
+  transition: 0.3s ease;
+}
+
+.link:hover {
+  color: #33ffaa;
+  border-bottom: 1px solid #33ffaa;
+}
+
+/* Step Block */
+.setup-step {
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #101612;
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+  max-width: 700px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.setup-step:hover {
+  transform: translateY(-5px);
+}
+
+.setup-step h2 {
+  font-size: 30px;
+  color: #00ff88;
+  margin-bottom: 15px;
+}
+
+.setup-step p {
+  font-size: 17px;
+  color: #99ffd6;
+  line-height: 1.7;
+}
+
+.note {
+  font-size: 14px;
+  color: #66ffbb;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Tutorial Steps Section */
+.tutorial-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin: 60px auto;
+  max-width: 1300px;
+  padding: 0 30px;
+}
+
+/* Individual Tutorial Card */
+.tutorial-step {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #101416;
+  border: 1px solid #00ff88;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial-step:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(0, 255, 136, 0.4);
+}
+
+/* Tutorial Image */
+.tutorial-img {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.15);
+}
+
+/* Tutorial Text */
+.tutorial-text {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+}
+
+.tutorial-text h3 {
+  color: #00ff88;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+}
+
+.tutorial-text p {
+  font-size: 18px;
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .tutorial-step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tutorial-text {
+    padding: 20px;
+  }
+
+  .tutorial-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .setup-step h2 {
+    font-size: 26px;
+  }
+
+  .setup-header h1 {
+    font-size: 32px;
+  }
+}

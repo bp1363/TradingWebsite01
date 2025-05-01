@@ -10,7 +10,10 @@ const Home = () => {
       <header className="header">
         <h1>Welcome to Weltnexus</h1>
         <h2>Algo Signals - The Best Trading Algo</h2>
-        <button className="main-btn">Get Algo Signals V1</button>
+        <a href="https://youtube.com/@algosignalstrader?si=HMuSXDS5QyNZRhZL" target="_blank" rel="noopener noreferrer">
+  <button className="main-btn">Get Algo Signals V1</button>
+</a>
+
       </header>
 
       <section className="tagline-section">
@@ -42,7 +45,9 @@ const Home = () => {
       <section className="promo-section">
         <h2>Experience the Future of Trading</h2>
         <p>Join thousands of traders already transforming their success with Algo Signals. Simple, powerful, and proven.</p>
-        <button className="promo-btn">Start Now</button>
+        <a href="https://youtube.com/@algosignalstrader?si=HMuSXDS5QyNZRhZL" target="_blank" rel="noopener noreferrer">
+  <button className="main-btn">Learn Now</button>
+</a>
       </section>
 
       <Footer />

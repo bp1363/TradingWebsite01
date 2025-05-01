@@ -1,10 +1,11 @@
 /* NavBar.css */
 
+/* General Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0d0d0d;
+  background-color: #000000; /* Deep black background for the navbar */
   padding: 15px 40px;
   box-shadow: 0 2px 10px rgba(0, 255, 136, 0.1);
   position: sticky;
@@ -29,6 +30,9 @@
   height: 40px;
   width: auto;
   object-fit: contain;
+  background-color: #000000; /* Matching logo background with deep black */
+  padding: 5px;
+  border-radius: 10px;
 }
 
 
@@ -76,14 +80,7 @@
   text-decoration: underline;
 }
 
-
-/* Logo image */
-.logo-img {
-  height: 40px;
-  width: auto;
-}
-
-/* Dropdown styling */
+/* Dropdown Styling */
 .dropdown {
   position: relative;
 }
@@ -106,7 +103,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #0d0d0d;
+  background-color: #000000; /* Deep black background for the dropdown */
   padding: 10px;
   list-style: none;
   border-radius: 8px;
